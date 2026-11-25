@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'css/aside.css' %}">
+  <title>MyFiles | {% block title %}{% endblock %}</title>
+</head>
+<body>
+  <aside id="aside">
+    <div class="aside-header">
+      <span>АО "103 БТРЗ"</span>
+
+      <button>
+        <img src="{% static 'icons/hamburger-button.svg' %}">
+      </button>
+    </div>
+
+    <div class="aside-section">
+      <div class="aside-section-content">
+        <h4>Файлы</h4>
+
+        <a href="#">Список файлов</a>
+        <a href="#">Загрузить файл</a>
+      </div>
+    </div>
+
+    <div class="aside-section">
+      <div class="aside-section-content">
+        <h4>Администратор</h4>
+
+        <a href="#">Отделы</a>
+        <a href="#">Категории</a>
+        <a href="#">Тэги</a>
+        <a href="#">Файлы</a>
+        <a href="#">Пользователи</a>
+      </div>
+    </div>
+  </aside>
+
+  <section id="main-cntent-section">
+    {% block content %}103 BTRZ{% endblock %}
+  </section>
+</body>
+</html>

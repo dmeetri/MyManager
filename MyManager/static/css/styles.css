@@ -1,0 +1,23 @@
+:root {
+  --color-orange: #e8671c;
+  --color-background: #131313;
+  --color-main-block: #1c1c1c;
+
+  --color-border: #2e2e2e;
+  --color-white: #f3f3f3;
+  --color-gray: #d6d6d6;
+
+  --color-gray-hover: #353535;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-white);
+}
+
+h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-gray);
+}
